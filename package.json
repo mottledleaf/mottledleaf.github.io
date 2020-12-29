@@ -3,7 +3,7 @@
     "main": "index.html",
     "js-flags": "--expose-gc",
     "window": {
-        "title": "Ultra Mode 7",
+        "title": "U",
         "toolbar": false,
         "width": 816,
         "height": 624,
