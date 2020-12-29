@@ -591,7 +591,7 @@ Window_Message.prototype.changeWindowDimensions = function() {
 				var faceoffset = Galv.MB.w;
 			};
 		} else {
-			var faceoffset = Window_Base._faceWidth + 25;
+			var faceoffset = Window_Base._faceWidth;  //took out "+25"
 		};
 
 		// Calc X Offset
