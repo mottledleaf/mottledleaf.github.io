@@ -32,9 +32,8 @@ Window_Base._iconHeight = 32;
 Window_Base._faceWidth  = 144;
 Window_Base._faceHeight = 144;
 
-//Title line height default is 26
 Window_Base.prototype.lineHeight = function() {
-    return 46;
+    return 36;
 };
 
 Window_Base.prototype.standardFontFace = function() {
@@ -46,17 +45,17 @@ Window_Base.prototype.standardFontFace = function() {
         return 'GameFont';
     }
 };
-//Ttile font size deafult is 28
-Window_Base.prototype.standardFontSize = function() {
-    return 48;
-};
 
-Window_Base.prototype.standardPadding = function() {
+Window_Base.prototype.standardFontSize = function() {
     return 28;
 };
 
+Window_Base.prototype.standardPadding = function() {
+    return 18;
+};
+
 Window_Base.prototype.textPadding = function() {
-    return 16;
+    return 6;
 };
 
 Window_Base.prototype.standardBackOpacity = function() {
@@ -3879,7 +3878,7 @@ Window_ChoiceList.prototype.windowWidth = function() {
     var width = this.maxChoiceWidth() + this.padding * 2;
     return Math.min(width, Graphics.boxWidth);
 };
-//♪
+
 Window_ChoiceList.prototype.numVisibleRows = function() {
     var messageY = this._messageWindow.y;
     var messageHeight = this._messageWindow.height;
@@ -5742,9 +5741,9 @@ Window_TitleCommand._lastCommandSymbol = null;
 Window_TitleCommand.initCommandPosition = function() {
     this._lastCommandSymbol = null;
 };
-//Width of the title window box
+
 Window_TitleCommand.prototype.windowWidth = function() {
-    return 440;
+    return 240;
 };
 
 Window_TitleCommand.prototype.updatePlacement = function() {
@@ -5753,7 +5752,7 @@ Window_TitleCommand.prototype.updatePlacement = function() {
 };
 
 Window_TitleCommand.prototype.makeCommandList = function() {
-     this.addCommand(TextManager.newGame,   'newGame');
+    this.addCommand(TextManager.newGame,   'newGame');
 //    this.addCommand(TextManager.continue_, 'continue', this.isContinueEnabled());
 //    this.addCommand(TextManager.options,   'options');
 };
