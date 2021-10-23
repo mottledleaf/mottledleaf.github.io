@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+$ git add -A
+$ git commit -m 'add CNAME file'
+$ git push origin master
